@@ -4,10 +4,12 @@ public class Main {
 
     public static void main(String[] args) {
         Deer deer = new Deer();
-        Deer d = new Deer();
-        Animal a = d;
-        Vegetarian v = d;
-        Object o = d;
+        Deer d = deer;//heap
+        System.out.println(d);
+        System.out.println(deer);
+        Animal a = deer;
+        Vegetarian v = deer;
+        Object o = deer;
 
        if (deer instanceof Animal){
            System.out.println("A Deer IS-A Animal");
